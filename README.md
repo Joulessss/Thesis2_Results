@@ -4,7 +4,7 @@
 **Grade:** Master's in Chemical Engineering \\
 
 **Principal investigator:** Juliana Quintana Rojas \\
-**Advisors:** Andrés Fernando González Barrios (Senior Investigator) and Carlos E. Torres (Buisness Consultor ) \\
+**Advisors:** Andrés Fernando González Barrios (Senior Investigator) and Carlos E. Torres (Buisness Advisor ) \\
 **Supporting investigators:** Jacquelinne Villalobos \\
 
 
