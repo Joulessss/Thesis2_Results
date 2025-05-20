@@ -1,81 +1,119 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Thesis Results Index</title>
-    <style>
-        body { font-family: Arial, sans-serif; padding: 20px; }
-        h1, h2, h3 { color: #2c3e50; }
-        ul { list-style-type: none; padding-left: 20px; }
-        li { margin: 8px 0; }
-        a { text-decoration: none; color: #2980b9; }
-        a:hover { text-decoration: underline; }
-    </style>
+  <meta charset="UTF-8">
+  <title>Thesis Results – Juliana Quintana Rojas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    details summary {
+      cursor: pointer;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    summary::-webkit-details-marker {
+      color: #3498db;
+    }
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Electronic sensory evaluation</h1>
 
-    <h2>Electronic nose responses</h2>
-    <h3>Statistical visualization information</h3>
-    <ul>
-        <li><a href="images/nose/boxplot_variance.png" target="_blank">Boxplot of sensor variance</a></li>
-        <li><a href="images/nose/correlation_matrix.png" target="_blank">Correlation matrix of e-nose sensors</a></li>
-    </ul>
-    <h3>Aroma intensity</h3>
-    <ul>
-        <li><a href="html/aroma_sankey_group_A.html" target="_blank">Sankey Diagram - Group A</a></li>
-        <li><a href="images/aroma_heatmap.png" target="_blank">Heatmap of aroma intensity</a></li>
-    </ul>
+  <h1>Prediction of Cocoa Liquors Sensory Profiles using e-Tongue and e-Nose Data</h1>
+  <p><strong>Subject:</strong> Thesis 2<br>
+     <strong>Grade:</strong> Master's in Chemical Engineering<br>
+     <strong>Principal Investigator:</strong> Juliana Quintana Rojas<br>
+     <strong>Advisors:</strong> Andrés F. González Barrios (Senior Investigator), Carlos E. Torres (Business Advisor)<br>
+     <strong>Supporting Investigator:</strong> Jacquelinne Villalobos</p>
 
-    <h2>Electronic tongue responses</h2>
-    <h3>Statistical visualization information</h3>
-    <ul>
-        <li><a href="images/tongue/pca_scores.png" target="_blank">PCA Scores Plot</a></li>
-    </ul>
-    <h3>Taste information</h3>
-    <ul>
-        <li><a href="html/taste_sankey_group_B.html" target="_blank">Sankey Diagram - Group B</a></li>
-    </ul>
+  <p><em>The following repository hosts high-resolution and interactive visualizations referenced throughout the study. These figures are too detailed or large to be clearly displayed in the main thesis document.</em></p>
 
-    <h1>Human sensory panel</h1>
-    <h2>Statistical visualization information</h2>
-    <ul>
-        <li><a href="images/panel/hedonic_distribution.png" target="_blank">Hedonic score distribution</a></li>
-    </ul>
-    <h2>Sensory evaluation responses per sample</h2>
-    <ul>
-        <li><a href="html/sample_flavor_sankey.html" target="_blank">Flavor presence per sample</a></li>
-    </ul>
+  <!-- Section 1 -->
+  <details open>
+    <summary>📡 Electronic Sensory Evaluation</summary>
+    <div class="section">
+      <details>
+        <summary>🧪 Electronic Nose Responses</summary>
+        <ul>
+          <li><a href="boxplot_variance.html">Boxplot of sensor variance</a></li>
+          <li><a href="correlation_matrix_nose.html">Correlation matrix of e-nose sensors</a></li>
+          <li><a href="sankey_group_A.html">Sankey Diagram – Group A</a></li>
+          <li><a href="heatmap_aroma.html">Heatmap of aroma intensity</a></li>
+        </ul>
+      </details>
 
-    <h1>Machine Learning implementation</h1>
-    <h2>Data augmentation</h2>
-    <ul>
-        <li><a href="images/augmentation/aug_comparison.png" target="_blank">Comparison of augmentation methods</a></li>
-    </ul>
+      <details>
+        <summary>💧 Electronic Tongue Responses</summary>
+        <ul>
+          <li><a href="pca_scores_tongue.html">PCA Scores Plot</a></li>
+          <li><a href="sankey_group_B.html">Sankey Diagram – Group B</a></li>
+        </ul>
+      </details>
+    </div>
+  </details>
 
-    <h2>Unsupervised learning</h2>
-    <h3>Model optimization and hyperparameter tuning</h3>
-    <ul>
-        <li><a href="images/ul/metrics_comparison.png" target="_blank">Metric comparison across UL models</a></li>
-    </ul>
-    <h3>Best model performance</h3>
-    <ul>
-        <li><a href="html/ul_best_model.html" target="_blank">Interactive plot of best-performing model</a></li>
-    </ul>
+  <!-- Section 2 -->
+  <details>
+    <summary>👅 Human Sensory Panel</summary>
+    <div class="section">
+      <ul>
+        <li><a href="hedonic_distribution.html">Hedonic Score Distribution</a></li>
+        <li><a href="flavor_per_sample.html">Flavor Presence per Sample</a></li>
+      </ul>
+    </div>
+  </details>
 
-    <h2>Supervised learning</h2>
-    <h3>Model optimization and hyperparameter tuning</h3>
-    <ul>
-        <li><a href="images/sl/gridsearch_summary.png" target="_blank">Grid search summary</a></li>
-    </ul>
-    <h3>Best model performance</h3>
-    <ul>
-        <li><a href="html/sl_confusion_matrix.html" target="_blank">Confusion matrix for best SL model</a></li>
-    </ul>
+  <!-- Section 3 -->
+  <details>
+    <summary>🧠 Machine Learning Implementation</summary>
+    <div class="section">
+      <details>
+        <summary>🧬 Data Augmentation</summary>
+        <ul>
+          <li><a href="augmentation_comparison.html">Comparison of Augmentation Methods</a></li>
+        </ul>
+      </details>
 
-    <h1>Model interpretation</h1>
+      <details>
+        <summary>🔍 Unsupervised Learning</summary>
+        <ul>
+          <li><a href="ul_tuning.html">Model Optimization and Tuning</a></li>
+          <li><a href="ul_performance.html">Best Model Performance</a></li>
+        </ul>
+      </details>
+
+      <details>
+        <summary>🧩 Supervised Learning</summary>
+        <ul>
+          <li><a href="sl_tuning.html">Model Optimization and Tuning</a></li>
+          <li><a href="sl_performance.html">Best Model Performance</a></li>
+        </ul>
+      </details>
+    </div>
+  </details>
+
+  <!-- Section 4 -->
+  <details>
+    <summary>🔎 Model Interpretation</summary>
     <ul>
-        <li><a href="images/interp/shap_summary.png" target="_blank">SHAP Summary Plot</a></li>
-        <li><a href="html/interp_global_feature_importance.html" target="_blank">Interactive Feature Importance</a></li>
+      <li><a href="model_explanability.html">Model Interpretability Dashboard</a></li>
     </ul>
+  </details>
+
 </body>
 </html>
